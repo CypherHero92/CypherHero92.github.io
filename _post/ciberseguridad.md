@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducción a la Ciberseguridad"
+title: "Título del post"
 date: 2025-07-30
 permalink: /ciberseguridad-general/
 ---
