@@ -2,7 +2,7 @@
 layout: post
 title: "Introducción a la Ciberseguridad"
 date: 2025-07-30
-categories: ciberseguridad seguridad
+categories: blog
 ---
 
 La ciberseguridad es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.
