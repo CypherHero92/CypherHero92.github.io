@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header style="text-align: center; margin-top: 20px;">
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  </header>
+
+  <main style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+    <h1>Bienvenido a mi laboratorio SOC</h1>
+    <p>Tutoriales prácticos de detección de ataques, análisis de malware, SIEM e IDS.</p>
+
+    <h2>Últimos tutoriales</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%d %b %Y" }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  </main>
+
+  <footer style="text-align: center; margin-top: 40px;">
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
