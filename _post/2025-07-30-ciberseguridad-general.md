@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Título del post"
+title: "Ciberseguridad general"
 date: 2025-07-30
 permalink: /ciberseguridad-general/
 ---
