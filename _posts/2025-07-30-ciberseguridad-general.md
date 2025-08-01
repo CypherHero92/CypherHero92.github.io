@@ -5,14 +5,11 @@ date: 2025-07-30
 permalink: /ciberseguridad-general/
 ---
 
-<p>by {{ site.author.name }}</p>
-<img src="/assets/images/Cypher2.jpg" alt="Foto de perfil CypherHero" width="100" style="border-radius: 50%;">
+by {{ site.author.name }}
 
-<p>
-  <a href="{{ site.author.instagram }}">Instagram</a> |
-  <a href="{{ site.author.twitter }}">Twitter</a> |
-  <a href="{{ site.author.github }}">GitHub</a>
-</p>
+![Foto de perfil]({{ site.author.avatar }}){: style="border-radius: 50%; width: 100px;" }
+
+[Instagram]({{ site.author.instagram }}) | [Twitter]({{ site.author.twitter }}) | [GitHub]({{ site.author.github }})
 
 La ciberseguridad es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.
 
