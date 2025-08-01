@@ -12,7 +12,7 @@ permalink: /ciberseguridad-general/
 
 <p>
   <a href="{{ site.author.instagram }}">Instagram</a> |
-  <a href="{{ site.author.twitter }}">Twitter</a> |
+  <a href="{{ site.author.twitter }}">X</a> |
   <a href="{{ site.author.github }}">GitHub</a> |
   <a href="{{ site.author.alienvault }}">AlienVault</a>
 </p>
