@@ -6,7 +6,7 @@ permalink: /ciberseguridad-general/
 ---
 
 <p>by {{ site.author.name }}</p>
-<img src="{{ site.author.avatar }}" alt="Foto de {{ site.author.name }}" width="100" style="border-radius: 50%;">
+<img src="/assets/images/Cypher2.jpg" alt="Foto de perfil CypherHero" width="100" style="border-radius: 50%;">
 
 <p>
   <a href="{{ site.author.instagram }}">Instagram</a> |
