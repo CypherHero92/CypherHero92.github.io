@@ -2,3 +2,10 @@ title: Mi laboratorio SOC
 description: Tutoriales de detección de ataques, malware y análisis forense
 theme: jekyll-theme-hacker
 markdown: kramdown
+
+author:
+  name: CypherHero92
+  avatar: /assets/images/mi-foto.jpg
+  instagram: https://instagram.com/CypherHero92
+  twitter: https://twitter.com/CypherHero92
+  github: https://github.com/CypherHero92
