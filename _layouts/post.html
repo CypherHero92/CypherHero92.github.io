@@ -1,55 +1,41 @@
+---
+# Nota: conserva el frontmatter vacío para que Jekyll reconozca el layout
+---
+
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <style>
-    /* Para que el contenido esté justificado y con margen izquierdo más pequeño */
-    .post-content {
-      text-align: justify;
-      margin-left: 5px; /* menos margen que antes */
-      margin-right: 0;
-    }
-    /* Espacio entre párrafos para mejor lectura */
-    .post-content p {
-      margin-bottom: 1em;
-    }
-    /* Centrar el bloque de autor + links */
-    .author-box {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .author-box img {
-      border-radius: 50%;
-      width: 100px;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
-  </style>
-</head>
-<body>
-  <header style="text-align: center; margin-top: 20px;">
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- Aquí se incluye el CSS del tema automáticamente -->
 
-  <article style="max-width: 800px; margin: 0 auto 40px auto; padding: 20px; box-sizing: border-box;">
-    <div class="author-box">
-      <img src="{{ site.author.avatar }}" alt="Foto de perfil">
-      <strong>by {{ site.author.name }}</strong><br>
-      <a href="{{ site.author.instagram }}">Instagram</a> |
-      <a href="{{ site.author.x }}">X</a> |
-      <a href="{{ site.author.github }}">GitHub</a> |
-      <a href="{{ site.author.alienvault }}">AlienVault</a>
-    </div>
+    <!-- Agrega tu CSS personalizado -->
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    </header>
 
-    <div class="post-content">
-      {{ content }}
-    </div>
-  </article>
+    <main class="site-main" style="max-width: 800px; margin: 0 auto; padding: 20px; box-sizing: border-box;">
+      <div class="author-box">
+        <img src="{{ site.author.avatar }}" alt="Foto de perfil">
+        <strong>by {{ site.author.name }}</strong><br>
+        <a href="{{ site.author.instagram }}">Instagram</a> |
+        <a href="{{ site.author.x }}">X</a> |
+        <a href="{{ site.author.github }}">GitHub</a> |
+        <a href="{{ site.author.alienvault }}">AlienVault</a>
+      </div>
 
-  <footer style="text-align: center; margin-top: 40px;">
-    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-  </footer>
-</body>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer" style="text-align: center; margin-top: 40px;">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </footer>
+  </body>
 </html>
+
