@@ -20,5 +20,3 @@ Con el aumento de amenazas digitales, implementar buenas prácticas de cibersegu
 
 ---
 
-¡Este es un post de prueba para verificar que tu sitio Jekyll funciona correctamente!
-
