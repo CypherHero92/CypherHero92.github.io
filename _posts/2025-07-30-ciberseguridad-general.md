@@ -5,7 +5,7 @@ date: 2025-07-30
 permalink: /ciberseguridad-general/
 ---
 
-<span style="color: #00FFFF;">La ciberseguridad</span> es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.
+<span style="color: #00FFFF;">La ciberseguridad es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.</span>
 
 ### Principales áreas de la ciberseguridad
 
