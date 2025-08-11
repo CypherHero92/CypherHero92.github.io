@@ -18,14 +18,15 @@
   margin-right: 0 !important;
 }
 
-/* Mejorar espacio entre párrafos dentro del post */
-.post-content p {
-  margin-bottom: 1em;
-}
-/* Centrar títulos en la página principal */
 .main-header {
   text-align: center;
   margin-top: 40px;
+}
+
+.main-header h1,
+.main-header h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .main-header h1,
