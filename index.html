@@ -3,13 +3,22 @@ layout: home
 title: Laboratorio de ciberseguridad
 ---
 
-<h1>Bienvenido a mi laboratorio SOC</h1>
-<p>Tutoriales prácticos de detección de ataques, análisis de malware, SIEM e IDS.</p>
+<header style="text-align: center; margin-top: 40px;">
+  <h1>CiberSeguridad, Blue Team y más</h1>
+  <p>Categorías principales</p>
+</header>
 
-<h2>Categorías principales</h2>
-<ul>
-  {% assign cats = site.categories %}
-  {% for cat in cats %}
-    <li><a href="/categories/{{ cat[0] }}/">{{ cat[0] | capitalize }} ({{ cat[1].size }})</a></li>
-  {% endfor %}
-</ul>
+<main style="max-width: 800px; margin: 0 auto; padding: 20px; text-align: center;">
+
+  <ul style="list-style: none; padding: 0; display: inline-block; text-align: left;">
+    {% assign cats = site.categories %}
+    {% for cat in cats %}
+      <li style="margin-bottom: 10px;">
+        <a href="/categories/{{ cat[0] }}/" style="text-decoration: none; font-weight: bold; font-size: 1.1em;">
+          {{ cat[0] | capitalize }} ({{ cat[1].size }})
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+
+</main>
