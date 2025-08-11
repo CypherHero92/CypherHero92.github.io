@@ -39,4 +39,7 @@ main h1, main h2 {
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   max-width: 250px;
 }
-
+.section-title {
+  color: #007acc; /* Cambia este color por el que quieras */
+  /* También puedes agregar font-weight, text-transform, etc. */
+}
