@@ -3,7 +3,7 @@ layout: post
 title: "Ciberseguridad general"
 date: 2025-07-30
 permalink: /ciberseguridad-general/
-categories: blue_team
+categories: [blue-team]
 ---
 
 <span style="color: #00FFFF;">La ciberseguridad es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.</span>
