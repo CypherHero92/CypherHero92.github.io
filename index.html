@@ -4,16 +4,12 @@ title: Laboratorio de ciberseguridad
 ---
 
 <h1>Bienvenido a mi laboratorio SOC</h1>
-
 <p>Tutoriales prácticos de detección de ataques, análisis de malware, SIEM e IDS.</p>
 
-<p><a href="/categories.html">Ver posts por categorías</a></p>
-
-<h2>Últimos tutoriales</h2>
+<h2>Categorías principales</h2>
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%d %b %Y" }}</small>
-    </li>
+  {% assign cats = site.categories %}
+  {% for cat in cats %}
+    <li><a href="/categories/{{ cat[0] }}/">{{ cat[0] | capitalize }} ({{ cat[1].size }})</a></li>
   {% endfor %}
 </ul>
