@@ -10,28 +10,60 @@
     <h1><a href="{{ '/' | relative_url }}">Laboratorio de ciberseguridad</a></h1>
   </header>
 
-  <article style="max-width: 800px; margin: 0 auto 40px auto; padding: 20px; box-sizing: border-box;">
-<div class="author-box" style="text-align: center; margin-bottom: 20px;">
-  <img src="{{ site.author.avatar }}" alt="Foto de perfil" style="border-radius: 50%; width: 100px; height: auto; display: block; margin: 0 auto 10px;">
-  <strong>by {{ site.author.name }}</strong><br>
-  <a href="{{ site.author.instagram }}">Instagram</a> |
-  <a href="{{ site.author.x }}">X</a> |
-  <a href="{{ site.author.github }}">GitHub</a> |
-  <a href="{{ site.author.alienvault }}">AlienVault</a>
-</div>
+  <article style="max-width: 900px; margin: 0 auto 40px auto; padding: 20px; box-sizing: border-box;">
+    <div class="author-box" style="text-align: center; margin-bottom: 20px;">
+      <img src="{{ site.author.avatar }}" alt="Foto de perfil" style="border-radius: 50%; width: 100px; height: auto; display: block; margin: 0 auto 10px;">
+      <strong>by {{ site.author.name }}</strong><br>
+      <a href="{{ site.author.instagram }}">Instagram</a> |
+      <a href="{{ site.author.x }}">X</a> |
+      <a href="{{ site.author.github }}">GitHub</a> |
+      <a href="{{ site.author.alienvault }}">AlienVault</a>
+    </div>
 
     <main style="padding-left: 10px; text-align: justify;">
-      <h1>CiberSeguridad, Blue Team, Hacking ético y Uso de herramientas</h1>
+      <h1>CiberSeguridad, Blue Team y más</h1>
       <p>Tutoriales prácticos de detección de ataques, análisis de malware, SIEM e IDS.</p>
 
-      <h2>Últimas publicaciones: </h2>
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <small>{{ post.date | date: "%d %b %Y" }}</small>
-          </li>
-        {% endfor %}
-      </ul>
+      <h2>Categorías principales</h2>
+
+      <div style="display:flex; gap:20px; flex-wrap:wrap;">
+        <div style="flex:1; min-width:200px; border-radius:8px; padding:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+          <h3><a href="/categories/blue-team/">Blue Team</a></h3>
+          <p>Detección, remediación, tickets y herramientas para SOC.</p>
+          <p><strong>
+            {% assign b = site.categories['blue-team'] %}
+            {{ b | size }} posts
+          </strong></p>
+        </div>
+
+        <div style="flex:1; min-width:200px; border-radius:8px; padding:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+          <h3><a href="/categories/red-team/">Red Team</a></h3>
+          <p>Ataques éticos, simulaciones y post-mortems.</p>
+          <p><strong>
+            {% assign r = site.categories['red-team'] %}
+            {{ r | size }} posts
+          </strong></p>
+        </div>
+
+        <div style="flex:1; min-width:200px; border-radius:8px; padding:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+          <h3><a href="/categories/analisis-malware/">Análisis Malware</a></h3>
+          <p>Estático, dinámico y subida de IOCs a AlienVault.</p>
+          <p><strong>
+            {% assign m = site.categories['analisis-malware'] %}
+            {{ m | size }} posts
+          </strong></p>
+        </div>
+
+        <div style="flex:1; min-width:200px; border-radius:8px; padding:12px; box-shadow:0 1px 4px rgba(0,0,0,0.08);">
+          <h3><a href="/categories/consejos/">Consejos de Seguridad</a></h3>
+          <p>Buenas prácticas, awareness y guías prácticas.</p>
+          <p><strong>
+            {% assign c = site.categories['consejos'] %}
+            {{ c | size }} posts
+          </strong></p>
+        </div>
+      </div>
+
     </main>
   </article>
 
@@ -40,4 +72,5 @@
   </footer>
 </body>
 </html>
+
 
