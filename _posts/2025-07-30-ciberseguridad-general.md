@@ -8,7 +8,7 @@ categories: [blue-team]
 
 <div style="border:2px solid #44ab0dff; padding:15px; background-color:#071002ff; color:#44ab0dff; font-weight:bold; margin-bottom:30px;">La ciberseguridad es una disciplina fundamental para proteger la información y los sistemas en el mundo digital.</div>
 
-### Principales áreas de la ciberseguridad
+<h2 style="color:#7CFC00;">1) Principales áreas de la ciberseguridad </h2>
 
 - <p color:#44ab0dff>Seguridad de redes: Protección de las comunicaciones y datos en tránsito. </p>
 - **Seguridad de sistemas:** Garantizar la integridad y disponibilidad de los  <span style="color: #00FFFF;">sistemas operativos</span>.
