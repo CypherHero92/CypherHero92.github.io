@@ -1,0 +1,13 @@
+title: Ingeniería Defensiva y SecOps
+description: Tutoriales de detección de ataques, análisis de malware, análisis forense, machine learning... Y mucho más.
+theme: jekyll-theme-hacker
+markdown: kramdown
+
+author:
+  name: CypherHero92
+  avatar: /assets/images/Cypher2.jpg
+  instagram: https://instagram.com/CypherHero92
+  x: https://x.com/CypherHero92
+  github: https://github.com/CypherHero92
+  alienvault: https://otx.alienvault.com/user/CypherHero92
+  
